@@ -348,7 +348,7 @@ FSMerger::install_file(const FSPath & src, const FSPath & dst_dir, const std::st
         result += msi_rename;
 
         bool touch(_imp->merged_ids.end() == _imp->merged_ids.find(src_stat.lowlevel_id()));
-        _imp->merged_ids.insert(make_pair(src_stat.lowlevel_id(), stringify(dst_real)));
+        _imp->merged_ids.insert(std::make_pair(src_stat.lowlevel_id(), stringify(dst_real)));
 
         FSPath d(stringify(dst_real));
         if (touch && ! _imp->params.options()[mo_preserve_mtimes])
@@ -440,7 +440,7 @@ FSMerger::install_file(const FSPath & src, const FSPath & dst_dir, const std::st
             throw FSMergerError(
                     "rename(" + stringify(dst) + ", " + stringify(dst_real) + ") failed: " + stringify(::strerror(errno)));
 
-        _imp->merged_ids.insert(make_pair(src_stat.lowlevel_id(), stringify(dst_real)));
+        _imp->merged_ids.insert(std::make_pair(src_stat.lowlevel_id(), stringify(dst_real)));
     }
 
     if (fixed_ownership_for(src))
@@ -472,14 +472,14 @@ FSMerger::track_renamed_dir_recursive(const FSPath & dst)
             case et_sym:
                 rewrite_symlink_as_needed(*d, dst);
                 track_install_sym(*d, dst, merged_how + msi_parent_rename);
-                _imp->merged_ids.insert(make_pair(d->stat().lowlevel_id(), stringify(*d)));
+                _imp->merged_ids.insert(std::make_pair(d->stat().lowlevel_id(), stringify(*d)));
                 continue;
 
             case et_file:
                 {
                     FSStat d_star_stat(*d);
                     bool touch(_imp->merged_ids.end() == _imp->merged_ids.find(d_star_stat.lowlevel_id()));
-                    _imp->merged_ids.insert(make_pair(d_star_stat.lowlevel_id(), stringify(*d)));
+                    _imp->merged_ids.insert(std::make_pair(d_star_stat.lowlevel_id(), stringify(*d)));
 
                     if (touch && ! _imp->params.options()[mo_preserve_mtimes])
                         if (! d->utime(Timestamp::now()))
@@ -644,7 +644,7 @@ FSMerger::install_sym(const FSPath & src, const FSPath & dst_dir)
         if (0 != ::symlink(stringify(src.readlink()).c_str(), stringify(dst).c_str()))
             throw FSMergerError("Couldn't create symlink at '" + stringify(dst) + "': "
                     + stringify(::strerror(errno)));
-        _imp->merged_ids.insert(make_pair(src_stat.lowlevel_id(), stringify(dst)));
+        _imp->merged_ids.insert(std::make_pair(src_stat.lowlevel_id(), stringify(dst)));
     }
 
     if (! _imp->params.no_chown())
