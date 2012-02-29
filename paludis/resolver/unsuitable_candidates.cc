@@ -49,5 +49,5 @@ UnsuitableCandidate::serialise(Serialiser & s) const
 namespace paludis
 {
     template class Sequence<UnsuitableCandidate>;
-    template class WrappedForwardIterator<UnsuitableCandidates::ConstIteratorTag, const UnsuitableCandidate>;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<UnsuitableCandidates::ConstIteratorTag, const UnsuitableCandidate>;
 }

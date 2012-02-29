@@ -32,21 +32,21 @@
 
 namespace paludis
 {
-    class DepSpec;
-    class PackageDepSpec;
-    class PlainTextDepSpec;
-    class LicenseDepSpec;
-    class FetchableURIDepSpec;
-    class SimpleURIDepSpec;
-    class AllDepSpec;
-    class ExactlyOneDepSpec;
-    class AnyDepSpec;
-    class ConditionalDepSpec;
-    class BlockDepSpec;
-    class StringDepSpec;
-    class NamedSetDepSpec;
-    class PlainTextLabelDepSpec;
-    template <typename T_> class LabelsDepSpec;
+    class PALUDIS_VISIBLE DepSpec;
+    class PALUDIS_VISIBLE PackageDepSpec;
+    class PALUDIS_VISIBLE PlainTextDepSpec;
+    class PALUDIS_VISIBLE LicenseDepSpec;
+    class PALUDIS_VISIBLE FetchableURIDepSpec;
+    class PALUDIS_VISIBLE SimpleURIDepSpec;
+    class PALUDIS_VISIBLE AllDepSpec;
+    class PALUDIS_VISIBLE ExactlyOneDepSpec;
+    class PALUDIS_VISIBLE AnyDepSpec;
+    class PALUDIS_VISIBLE ConditionalDepSpec;
+    class PALUDIS_VISIBLE BlockDepSpec;
+    class PALUDIS_VISIBLE StringDepSpec;
+    class PALUDIS_VISIBLE NamedSetDepSpec;
+    class PALUDIS_VISIBLE PlainTextLabelDepSpec;
+    template <typename T_> class PALUDIS_VISIBLE LabelsDepSpec;
 
     /**
      * A URILabelsDepSpec represents labels in a FetchableURISpecTree.

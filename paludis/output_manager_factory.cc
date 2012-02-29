@@ -149,5 +149,5 @@ namespace paludis
 {
     template class Pimp<OutputManagerFactory>;
     template class Singleton<OutputManagerFactory>;
-    template class WrappedForwardIterator<OutputManagerFactory::ConstIteratorTag, const std::string>;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<OutputManagerFactory::ConstIteratorTag, const std::string>;
 }

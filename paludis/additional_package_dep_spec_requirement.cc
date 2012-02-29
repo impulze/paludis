@@ -36,5 +36,5 @@ paludis::operator<< (std::ostream & s, const AdditionalPackageDepSpecRequirement
 namespace paludis
 {
     template class Sequence<std::shared_ptr<const AdditionalPackageDepSpecRequirement> >;
-    template class WrappedForwardIterator<AdditionalPackageDepSpecRequirements::ConstIteratorTag, const std::shared_ptr<const AdditionalPackageDepSpecRequirement> >;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<AdditionalPackageDepSpecRequirements::ConstIteratorTag, const std::shared_ptr<const AdditionalPackageDepSpecRequirement> >;
 }

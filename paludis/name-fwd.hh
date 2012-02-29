@@ -34,7 +34,7 @@
 
 namespace paludis
 {
-    class PackageNamePartTag;
+    class PALUDIS_VISIBLE PackageNamePartTag;
     class PackageNamePartError;
     template <> struct WrappedValueTraits<PackageNamePartTag>;
 
@@ -48,7 +48,7 @@ namespace paludis
 
     typedef Set<PackageNamePart> PackageNamePartSet;
 
-    class CategoryNamePartTag;
+    class PALUDIS_VISIBLE CategoryNamePartTag;
     class CategoryNamePartError;
     template <> struct WrappedValueTraits<CategoryNamePartTag>;
 
@@ -62,7 +62,7 @@ namespace paludis
 
     typedef Set<CategoryNamePart> CategoryNamePartSet;
 
-    class QualifiedPackageName;
+    class PALUDIS_VISIBLE QualifiedPackageName;
 
     /**
      * Output a QualifiedPackageName to a stream.
@@ -79,7 +79,7 @@ namespace paludis
     inline const QualifiedPackageName
     operator+ (const CategoryNamePart & c, const PackageNamePart & p) PALUDIS_ATTRIBUTE((warn_unused_result));
 
-    class SlotNameTag;
+    class PALUDIS_VISIBLE SlotNameTag;
     class SlotNameError;
     template <> struct WrappedValueTraits<SlotNameTag>;
 
@@ -92,7 +92,7 @@ namespace paludis
      */
     typedef WrappedValue<SlotNameTag> SlotName;
 
-    class RepositoryNameTag;
+    class PALUDIS_VISIBLE RepositoryNameTag;
     class RepositoryNameError;
     template <> struct WrappedValueTraits<RepositoryNameTag>;
 
@@ -106,7 +106,7 @@ namespace paludis
 
     typedef Set<RepositoryName> RepositoryNameSet;
 
-    class KeywordNameTag;
+    class PALUDIS_VISIBLE KeywordNameTag;
     class KeywordNameError;
     template <> struct WrappedValueTraits<KeywordNameTag>;
 
@@ -119,7 +119,7 @@ namespace paludis
 
     typedef Set<KeywordName> KeywordNameSet;
 
-    class SetNameTag;
+    class PALUDIS_VISIBLE SetNameTag;
     class SetNameError;
     template <> struct WrappedValueTraits<SetNameTag>;
 

@@ -272,10 +272,10 @@ namespace paludis
     template class DepSpecFlattener<SetSpecTree, PackageDepSpec>;
     template class DepSpecFlattener<SimpleURISpecTree, SimpleURIDepSpec>;
 
-    template class WrappedForwardIterator<DepSpecFlattener<PlainTextSpecTree, PlainTextDepSpec>::ConstIteratorTag,
+    template class PALUDIS_VISIBLE WrappedForwardIterator<DepSpecFlattener<PlainTextSpecTree, PlainTextDepSpec>::ConstIteratorTag,
              const std::shared_ptr<const PlainTextDepSpec> >;
-    template class WrappedForwardIterator<DepSpecFlattener<SetSpecTree, PackageDepSpec>::ConstIteratorTag,
+    template class PALUDIS_VISIBLE WrappedForwardIterator<DepSpecFlattener<SetSpecTree, PackageDepSpec>::ConstIteratorTag,
              const std::shared_ptr<const PackageDepSpec> >;
-    template class WrappedForwardIterator<DepSpecFlattener<SimpleURISpecTree, SimpleURIDepSpec>::ConstIteratorTag,
+    template class PALUDIS_VISIBLE WrappedForwardIterator<DepSpecFlattener<SimpleURISpecTree, SimpleURIDepSpec>::ConstIteratorTag,
              const std::shared_ptr<const SimpleURIDepSpec> >;
 }

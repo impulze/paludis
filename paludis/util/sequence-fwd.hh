@@ -20,6 +20,8 @@
 #ifndef PALUDIS_GUARD_PALUDIS_UTIL_SEQUENCE_FWD_HH
 #define PALUDIS_GUARD_PALUDIS_UTIL_SEQUENCE_FWD_HH 1
 
+#include <paludis/util/attributes.hh>
+
 /** \file
  * Forward declarations for paludis/util/sequence.hh .
  *
@@ -32,13 +34,13 @@ namespace paludis
     struct Sequence;
 
     template <typename T_>
-    struct SequenceConstIteratorTag;
+    struct PALUDIS_VISIBLE SequenceConstIteratorTag;
 
     template <typename T_>
-    struct SequenceReverseConstIteratorTag;
+    struct PALUDIS_VISIBLE SequenceReverseConstIteratorTag;
 
     template <typename T_>
-    struct SequenceInserterTag;
+    struct PALUDIS_VISIBLE SequenceInserterTag;
 }
 
 #endif

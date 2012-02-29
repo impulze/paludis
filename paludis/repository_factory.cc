@@ -213,5 +213,5 @@ namespace paludis
 {
     template class Pimp<RepositoryFactory>;
     template class Singleton<RepositoryFactory>;
-    template class WrappedForwardIterator<RepositoryFactory::ConstIteratorTag, const std::string>;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<RepositoryFactory::ConstIteratorTag, const std::string>;
 }

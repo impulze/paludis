@@ -195,6 +195,6 @@ Repository::can_drop_in_memory_cache() const
 namespace paludis
 {
     template class Set<std::shared_ptr<Repository> >;
-    template class WrappedForwardIterator<Set<std::shared_ptr<Repository> >::ConstIteratorTag, const std::shared_ptr<Repository> >;
-    template class WrappedOutputIterator<Set<std::shared_ptr<Repository> >::InserterTag, std::shared_ptr<Repository> >;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<Set<std::shared_ptr<Repository> >::ConstIteratorTag, const std::shared_ptr<Repository> >;
+    template class PALUDIS_VISIBLE WrappedOutputIterator<Set<std::shared_ptr<Repository> >::InserterTag, std::shared_ptr<Repository> >;
 }

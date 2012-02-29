@@ -26,27 +26,27 @@
 namespace paludis
 {
     template <typename T_>
-    struct SpecTreeInnerNodeType;
+    struct PALUDIS_VISIBLE SpecTreeInnerNodeType;
 
     template <typename T_>
-    struct SpecTreeLeafNodeType;
+    struct PALUDIS_VISIBLE SpecTreeLeafNodeType;
 
     namespace spec_tree_internals
     {
         template <typename Tree_>
-        class BasicNode;
+        class PALUDIS_VISIBLE BasicNode;
 
         template <typename Tree_, typename Item_>
-        class LeafNode;
+        class PALUDIS_VISIBLE LeafNode;
 
         template <typename Tree_, typename Item_>
-        struct InnerNode;
+        struct PALUDIS_VISIBLE InnerNode;
 
         template <typename Tree_>
-        class BasicInnerNode;
+        class PALUDIS_VISIBLE BasicInnerNode;
 
         template <typename Tree_>
-        struct BasicInnerNodeConstIteratorTag;
+        struct PALUDIS_VISIBLE BasicInnerNodeConstIteratorTag;
 
         template <typename Tree_, typename NodeList_>
         struct MakeVisitableTypeListEntry;
@@ -68,7 +68,7 @@ namespace paludis
     }
 
     template <typename NodeList_, typename RootNode_>
-    class SpecTree;
+    class PALUDIS_VISIBLE SpecTree;
 
     typedef SpecTree<MakeTypeList<
             SpecTreeLeafNodeType<PlainTextDepSpec>,

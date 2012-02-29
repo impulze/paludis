@@ -332,16 +332,16 @@ namespace paludis
     template class Pimp<Choices>;
     template class Pimp<Choice>;
 
-    template class WrappedForwardIterator<Choices::ConstIteratorTag, const std::shared_ptr<const Choice> >;
-    template class WrappedForwardIterator<Choice::ConstIteratorTag, const std::shared_ptr<const ChoiceValue> >;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<Choices::ConstIteratorTag, const std::shared_ptr<const Choice> >;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<Choice::ConstIteratorTag, const std::shared_ptr<const ChoiceValue> >;
 
-    template class WrappedValue<UnprefixedChoiceNameTag>;
-    template class WrappedValue<ChoicePrefixNameTag>;
-    template class WrappedValue<ChoiceNameWithPrefixTag>;
+    template class PALUDIS_VISIBLE WrappedValue<UnprefixedChoiceNameTag>;
+    template class PALUDIS_VISIBLE WrappedValue<ChoicePrefixNameTag>;
+    template class PALUDIS_VISIBLE WrappedValue<ChoiceNameWithPrefixTag>;
 
     template class Set<UnprefixedChoiceName>;
-    template class WrappedForwardIterator<Set<UnprefixedChoiceName>::ConstIteratorTag, const UnprefixedChoiceName>;
-    template class WrappedOutputIterator<Set<UnprefixedChoiceName>::InserterTag, UnprefixedChoiceName>;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<Set<UnprefixedChoiceName>::ConstIteratorTag, const UnprefixedChoiceName>;
+    template class PALUDIS_VISIBLE WrappedOutputIterator<Set<UnprefixedChoiceName>::InserterTag, UnprefixedChoiceName>;
 }
 
 template std::ostream & paludis::operator<< (std::ostream &, const WrappedValue<UnprefixedChoiceNameTag> &);

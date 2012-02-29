@@ -561,5 +561,5 @@ SanitisedDependency::deserialise(Deserialisation & d, const std::shared_ptr<cons
 
 namespace paludis
 {
-    template class WrappedForwardIterator<SanitisedDependencies::ConstIteratorTag, const SanitisedDependency>;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<SanitisedDependencies::ConstIteratorTag, const SanitisedDependency>;
 }

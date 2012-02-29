@@ -117,5 +117,5 @@ ResolutionsByResolvent::deserialise(Deserialisation & d)
 
 namespace paludis
 {
-    template class WrappedForwardIterator<ResolutionsByResolvent::ConstIteratorTag, const std::shared_ptr<Resolution> >;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<ResolutionsByResolvent::ConstIteratorTag, const std::shared_ptr<Resolution> >;
 }

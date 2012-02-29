@@ -385,5 +385,5 @@ namespace paludis
     template class Pimp<Deserialiser>;
     template class Pimp<Deserialisation>;
     template class Pimp<Deserialisator>;
-    template class WrappedForwardIterator<Deserialisation::ConstIteratorTag, const std::shared_ptr<Deserialisation> >;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<Deserialisation::ConstIteratorTag, const std::shared_ptr<Deserialisation> >;
 }

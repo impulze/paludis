@@ -669,5 +669,5 @@ NDBAM::index(const QualifiedPackageName & q, const std::string & d) const
 namespace paludis
 {
     template class Sequence<std::shared_ptr<NDBAMEntry> >;
-    template class WrappedForwardIterator<Sequence<std::shared_ptr<NDBAMEntry> >::ConstIteratorTag, const std::shared_ptr<NDBAMEntry> >;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<Sequence<std::shared_ptr<NDBAMEntry> >::ConstIteratorTag, const std::shared_ptr<NDBAMEntry> >;
 }

@@ -27,7 +27,7 @@
 
 namespace paludis
 {
-    class AdditionalPackageDepSpecRequirement;
+    class PALUDIS_VISIBLE AdditionalPackageDepSpecRequirement;
 
     /**
      * An AdditionalPackageDepSpecRequirement can be written to an ostream.

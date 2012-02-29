@@ -341,5 +341,5 @@ DependentPackageID::deserialise(Deserialisation & d)
 namespace paludis
 {
     template class Sequence<DependentPackageID>;
-    template class WrappedForwardIterator<Sequence<DependentPackageID>::ConstIteratorTag, const DependentPackageID>;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<Sequence<DependentPackageID>::ConstIteratorTag, const DependentPackageID>;
 }

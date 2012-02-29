@@ -234,6 +234,6 @@ FuzzyRepositoriesFinder::end() const
 
 namespace paludis
 {
-    template class WrappedForwardIterator<FuzzyCandidatesFinder::CandidatesConstIteratorTag, const QualifiedPackageName>;
-    template class WrappedForwardIterator<FuzzyRepositoriesFinder::RepositoriesConstIteratorTag, const RepositoryName>;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<FuzzyCandidatesFinder::CandidatesConstIteratorTag, const QualifiedPackageName>;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<FuzzyRepositoriesFinder::RepositoriesConstIteratorTag, const RepositoryName>;
 }

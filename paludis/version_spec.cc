@@ -775,5 +775,5 @@ VersionSpec::end() const
 
 namespace paludis
 {
-    template class WrappedForwardIterator<VersionSpec::ConstIteratorTag, const VersionSpecComponent>;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<VersionSpec::ConstIteratorTag, const VersionSpecComponent>;
 }

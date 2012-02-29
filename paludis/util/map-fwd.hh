@@ -20,6 +20,8 @@
 #ifndef PALUDIS_GUARD_PALUDIS_UTIL_MAP_FWD_HH
 #define PALUDIS_GUARD_PALUDIS_UTIL_MAP_FWD_HH 1
 
+#include <paludis/util/attributes.hh>
+
 /** \file
  * Forward declarations for paludis/util/map.hh .
  *
@@ -29,16 +31,16 @@
 namespace paludis
 {
     template <typename T_>
-    struct DefaultMapComparator;
+    struct PALUDIS_VISIBLE DefaultMapComparator;
 
     template <typename K_, typename V_, typename C_ = DefaultMapComparator<K_> >
     struct Map;
 
     template <typename K_, typename V_, typename C_ = DefaultMapComparator<K_> >
-    struct MapConstIteratorTag;
+    struct PALUDIS_VISIBLE MapConstIteratorTag;
 
     template <typename K_, typename V_, typename C_ = DefaultMapComparator<K_> >
-    struct MapInserterTag;
+    struct PALUDIS_VISIBLE MapInserterTag;
 }
 
 #endif

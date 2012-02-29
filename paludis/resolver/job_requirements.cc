@@ -93,5 +93,5 @@ paludis::resolver::minimise_requirements(const std::shared_ptr<const JobRequirem
 namespace paludis
 {
     template class Sequence<JobRequirement>;
-    template class WrappedForwardIterator<Sequence<JobRequirement>::ConstIteratorTag, const JobRequirement>;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<Sequence<JobRequirement>::ConstIteratorTag, const JobRequirement>;
 }

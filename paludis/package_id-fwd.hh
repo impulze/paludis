@@ -34,9 +34,9 @@
 
 namespace paludis
 {
-    class PackageID;
-    class PackageIDSetComparator;
-    class PackageIDComparator;
+    class PALUDIS_VISIBLE PackageID;
+    class PALUDIS_VISIBLE PackageIDSetComparator;
+    class PALUDIS_VISIBLE PackageIDComparator;
 
     /**
      * A PackageIDSequence holds a collection of PackageID instances that may

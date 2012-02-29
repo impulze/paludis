@@ -186,15 +186,15 @@ namespace paludis
         template class Decisions<ChangeOrRemoveDecision, std::shared_ptr<const OrdererNotes> >;
     }
 
-    template class WrappedForwardIterator<Decisions<UnableToMakeDecision>::ConstIteratorTag,
+    template class PALUDIS_VISIBLE WrappedForwardIterator<Decisions<UnableToMakeDecision>::ConstIteratorTag,
              const std::shared_ptr<const UnableToMakeDecision> >;
-    template class WrappedForwardIterator<Decisions<ChangesToMakeDecision>::ConstIteratorTag,
+    template class PALUDIS_VISIBLE WrappedForwardIterator<Decisions<ChangesToMakeDecision>::ConstIteratorTag,
              const std::shared_ptr<const ChangesToMakeDecision> >;
-    template class WrappedForwardIterator<Decisions<ChangeOrRemoveDecision>::ConstIteratorTag,
+    template class PALUDIS_VISIBLE WrappedForwardIterator<Decisions<ChangeOrRemoveDecision>::ConstIteratorTag,
              const std::shared_ptr<const ChangeOrRemoveDecision> >;
-    template class WrappedForwardIterator<Decisions<ConfirmableDecision>::ConstIteratorTag,
+    template class PALUDIS_VISIBLE WrappedForwardIterator<Decisions<ConfirmableDecision>::ConstIteratorTag,
              const std::shared_ptr<const ConfirmableDecision> >;
-    template class WrappedForwardIterator<Decisions<ChangeOrRemoveDecision, std::shared_ptr<const OrdererNotes> >::ConstIteratorTag,
+    template class PALUDIS_VISIBLE WrappedForwardIterator<Decisions<ChangeOrRemoveDecision, std::shared_ptr<const OrdererNotes> >::ConstIteratorTag,
              const std::pair<
                  std::shared_ptr<const ChangeOrRemoveDecision>,
                  std::shared_ptr<const OrdererNotes> > >;

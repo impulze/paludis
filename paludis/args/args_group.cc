@@ -95,5 +95,5 @@ ArgsGroup::end() const
 
 namespace paludis
 {
-    template class WrappedForwardIterator<ArgsGroup::ConstIteratorTag, ArgsOption * const>;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<ArgsGroup::ConstIteratorTag, ArgsOption * const>;
 }

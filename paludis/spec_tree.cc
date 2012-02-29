@@ -268,7 +268,7 @@ namespace paludis
         template class BasicInnerNode<GenericSpecTree>;
     }
 
-    template class WrappedForwardIterator<BasicInnerNode<GenericSpecTree>::ConstIteratorTag,
+    template class PALUDIS_VISIBLE WrappedForwardIterator<BasicInnerNode<GenericSpecTree>::ConstIteratorTag,
              const std::shared_ptr<const BasicNode<GenericSpecTree> > >;
 
     namespace spec_tree_internals {
@@ -328,7 +328,7 @@ template const std::shared_ptr<DependencySpecTree::NodeType<ConditionalDepSpec>:
 
 namespace paludis
 {
-    template class WrappedForwardIterator<BasicInnerNode<DependencySpecTree>::ConstIteratorTag,
+    template class PALUDIS_VISIBLE WrappedForwardIterator<BasicInnerNode<DependencySpecTree>::ConstIteratorTag,
              const std::shared_ptr<const BasicNode<DependencySpecTree> > >;
     namespace spec_tree_internals {
         template class BasicInnerNode<DependencySpecTree>;
@@ -361,7 +361,7 @@ template const std::shared_ptr<SetSpecTree::NodeType<AllDepSpec>::Type>
 
 namespace paludis
 {
-    template class WrappedForwardIterator<BasicInnerNode<SetSpecTree>::ConstIteratorTag,
+    template class PALUDIS_VISIBLE WrappedForwardIterator<BasicInnerNode<SetSpecTree>::ConstIteratorTag,
              const std::shared_ptr<const BasicNode<SetSpecTree> > >;
 
     namespace spec_tree_internals {
@@ -396,7 +396,7 @@ template const std::shared_ptr<PlainTextSpecTree::NodeType<ConditionalDepSpec>::
 
 namespace paludis
 {
-    template class WrappedForwardIterator<BasicInnerNode<PlainTextSpecTree>::ConstIteratorTag,
+    template class PALUDIS_VISIBLE WrappedForwardIterator<BasicInnerNode<PlainTextSpecTree>::ConstIteratorTag,
              const std::shared_ptr<const BasicNode<PlainTextSpecTree> > >;
 
     namespace spec_tree_internals {
@@ -436,7 +436,7 @@ template const std::shared_ptr<RequiredUseSpecTree::NodeType<ConditionalDepSpec>
 
 namespace paludis
 {
-    template class WrappedForwardIterator<BasicInnerNode<RequiredUseSpecTree>::ConstIteratorTag,
+    template class PALUDIS_VISIBLE WrappedForwardIterator<BasicInnerNode<RequiredUseSpecTree>::ConstIteratorTag,
              const std::shared_ptr<const BasicNode<RequiredUseSpecTree> > >;
 
     namespace spec_tree_internals {
@@ -467,7 +467,7 @@ template const std::shared_ptr<SimpleURISpecTree::NodeType<AllDepSpec>::Type>
 
 namespace paludis
 {
-    template class WrappedForwardIterator<BasicInnerNode<SimpleURISpecTree>::ConstIteratorTag,
+    template class PALUDIS_VISIBLE WrappedForwardIterator<BasicInnerNode<SimpleURISpecTree>::ConstIteratorTag,
              const std::shared_ptr<const BasicNode<SimpleURISpecTree> > >;
 
     namespace spec_tree_internals {
@@ -501,7 +501,7 @@ template const std::shared_ptr<FetchableURISpecTree::NodeType<AllDepSpec>::Type>
 
 namespace paludis
 {
-    template class WrappedForwardIterator<BasicInnerNode<FetchableURISpecTree>::ConstIteratorTag,
+    template class PALUDIS_VISIBLE WrappedForwardIterator<BasicInnerNode<FetchableURISpecTree>::ConstIteratorTag,
              const std::shared_ptr<const BasicNode<FetchableURISpecTree> > >;
 
     namespace spec_tree_internals {
@@ -538,7 +538,7 @@ template const std::shared_ptr<LicenseSpecTree::NodeType<ConditionalDepSpec>::Ty
 
 namespace paludis
 {
-    template class WrappedForwardIterator<BasicInnerNode<LicenseSpecTree>::ConstIteratorTag,
+    template class PALUDIS_VISIBLE WrappedForwardIterator<BasicInnerNode<LicenseSpecTree>::ConstIteratorTag,
              const std::shared_ptr<const BasicNode<LicenseSpecTree> > >;
 
     namespace spec_tree_internals {

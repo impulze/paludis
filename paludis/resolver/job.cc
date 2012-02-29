@@ -445,5 +445,5 @@ UninstallJob::serialise(Serialiser & s) const
 namespace paludis
 {
     template class Sequence<PackageDepSpec>;
-    template class WrappedForwardIterator<Sequence<PackageDepSpec>::ConstIteratorTag, const PackageDepSpec>;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<Sequence<PackageDepSpec>::ConstIteratorTag, const PackageDepSpec>;
 }

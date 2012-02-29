@@ -31,13 +31,13 @@
 
 namespace paludis
 {
-    class Mask;
-    class UserMask;
-    class UnacceptedMask;
-    class RepositoryMask;
-    class UnsupportedMask;
+    class PALUDIS_VISIBLE Mask;
+    class PALUDIS_VISIBLE UserMask;
+    class PALUDIS_VISIBLE UnacceptedMask;
+    class PALUDIS_VISIBLE RepositoryMask;
+    class PALUDIS_VISIBLE UnsupportedMask;
 
-    struct OverriddenMask;
+    struct PALUDIS_VISIBLE OverriddenMask;
 
 #include <paludis/mask-se.hh>
 

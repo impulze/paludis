@@ -34,7 +34,7 @@
 
 namespace paludis
 {
-    class VersionRequirement;
+    class PALUDIS_VISIBLE VersionRequirement;
 
     /**
      * A collection of VersionRequirement instances, usually for a

@@ -135,5 +135,5 @@ ChangedChoicesConfirmation::serialise(Serialiser & s) const
 namespace paludis
 {
     template class Sequence<std::shared_ptr<const RequiredConfirmation> >;
-    template class WrappedForwardIterator<RequiredConfirmations::ConstIteratorTag, const std::shared_ptr<const RequiredConfirmation> >;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<RequiredConfirmations::ConstIteratorTag, const std::shared_ptr<const RequiredConfirmation> >;
 }

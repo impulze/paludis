@@ -91,8 +91,8 @@ namespace paludis
     template class SpecificDependenciesLabel<DependenciesTestLabelTag>;
 
     template class Sequence<std::shared_ptr<const DependenciesLabel> >;
-    template class WrappedForwardIterator<Sequence<std::shared_ptr<const DependenciesLabel> >::ConstIteratorTag,
+    template class PALUDIS_VISIBLE WrappedForwardIterator<Sequence<std::shared_ptr<const DependenciesLabel> >::ConstIteratorTag,
              const std::shared_ptr<const DependenciesLabel> >;
-    template class WrappedOutputIterator<Sequence<std::shared_ptr<const DependenciesLabel> >::InserterTag,
+    template class PALUDIS_VISIBLE WrappedOutputIterator<Sequence<std::shared_ptr<const DependenciesLabel> >::InserterTag,
              std::shared_ptr<const DependenciesLabel> >;
 }

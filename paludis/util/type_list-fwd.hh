@@ -20,12 +20,14 @@
 #ifndef PALUDIS_GUARD_PALUDIS_UTIL_TYPE_LIST_FWD_HH
 #define PALUDIS_GUARD_PALUDIS_UTIL_TYPE_LIST_FWD_HH 1
 
+#include <paludis/util/attributes.hh>
+
 namespace paludis
 {
-    struct TypeListTail;
+    struct PALUDIS_VISIBLE TypeListTail;
 
     template <typename Item_, typename Tail_>
-    struct TypeListEntry;
+    struct PALUDIS_VISIBLE TypeListEntry;
 
     template <typename...>
     struct MakeTypeList;

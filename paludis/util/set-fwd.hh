@@ -20,6 +20,8 @@
 #ifndef PALUDIS_GUARD_PALUDIS_UTIL_SET_FWD_HH
 #define PALUDIS_GUARD_PALUDIS_UTIL_SET_FWD_HH 1
 
+#include <paludis/util/attributes.hh>
+
 /** \file
  * Forward declarations for paludis/util/set.hh .
  *
@@ -29,16 +31,16 @@
 namespace paludis
 {
     template <typename T_>
-    struct DefaultSetComparator;
+    struct PALUDIS_VISIBLE DefaultSetComparator;
 
     template <typename T_, typename C_ = DefaultSetComparator<T_> >
     struct Set;
 
     template <typename T_, typename C_>
-    struct SetConstIteratorTag;
+    struct PALUDIS_VISIBLE SetConstIteratorTag;
 
     template <typename T_, typename C_>
-    struct SetInsertIteratorTag;
+    struct PALUDIS_VISIBLE SetInsertIteratorTag;
 }
 
 #endif

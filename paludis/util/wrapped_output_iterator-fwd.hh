@@ -20,6 +20,8 @@
 #ifndef PALUDIS_GUARD_PALUDIS_UTIL_WRAPPED_OUTPUT_ITERATOR_FWD_HH
 #define PALUDIS_GUARD_PALUDIS_UTIL_WRAPPED_OUTPUT_ITERATOR_FWD_HH 1
 
+#include <paludis/util/attributes.hh>
+
 namespace paludis
 {
     template <typename Tag_, typename Value_>

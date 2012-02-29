@@ -500,5 +500,5 @@ namespace paludis
     template class Pimp<ViaBinaryReason>;
 
     template class Sequence<std::shared_ptr<const Reason> >;
-    template class WrappedForwardIterator<Reasons::ConstIteratorTag, const std::shared_ptr<const Reason> >;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<Reasons::ConstIteratorTag, const std::shared_ptr<const Reason> >;
 }

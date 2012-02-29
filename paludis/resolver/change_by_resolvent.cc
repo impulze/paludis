@@ -49,5 +49,5 @@ ChangeByResolvent::deserialise(Deserialisation & d)
 namespace paludis
 {
     template class Sequence<ChangeByResolvent>;
-    template class WrappedForwardIterator<Sequence<ChangeByResolvent>::ConstIteratorTag, const ChangeByResolvent>;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<Sequence<ChangeByResolvent>::ConstIteratorTag, const ChangeByResolvent>;
 }

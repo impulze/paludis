@@ -221,6 +221,6 @@ namespace paludis
     template class SymbolSection<Elf32Type>;
     template class SymbolSection<Elf64Type>;
 
-    template class WrappedForwardIterator<SymbolSection<Elf32Type>::SymbolIteratorTag, const Symbol<Elf32Type> >;
-    template class WrappedForwardIterator<SymbolSection<Elf64Type>::SymbolIteratorTag, const Symbol<Elf64Type> >;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<SymbolSection<Elf32Type>::SymbolIteratorTag, const Symbol<Elf32Type> >;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<SymbolSection<Elf64Type>::SymbolIteratorTag, const Symbol<Elf64Type> >;
 }

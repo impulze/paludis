@@ -157,5 +157,5 @@ Hook::name() const
 
 namespace paludis
 {
-    template class WrappedForwardIterator<Hook::ConstIteratorTag, const std::pair<const std::string, std::string> >;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<Hook::ConstIteratorTag, const std::pair<const std::string, std::string> >;
 }

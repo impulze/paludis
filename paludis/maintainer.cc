@@ -38,6 +38,6 @@ paludis::operator<< (std::ostream & s, const Maintainer & m)
 namespace paludis
 {
     template class Sequence<Maintainer>;
-    template class WrappedForwardIterator<Sequence<Maintainer>::ConstIteratorTag, const Maintainer>;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<Sequence<Maintainer>::ConstIteratorTag, const Maintainer>;
 }
 

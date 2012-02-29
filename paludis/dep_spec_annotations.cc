@@ -150,5 +150,5 @@ paludis::find_blocker_role_in_annotations(
 namespace paludis
 {
     template class Pimp<DepSpecAnnotations>;
-    template class WrappedForwardIterator<DepSpecAnnotations::ConstIteratorTag, const DepSpecAnnotation>;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<DepSpecAnnotations::ConstIteratorTag, const DepSpecAnnotation>;
 }

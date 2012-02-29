@@ -123,8 +123,8 @@ JobList<Job_>::serialise(Serialiser & s) const
 
 namespace paludis
 {
-    template class WrappedForwardIterator<JobListConstIteratorTag<PretendJob>, const std::shared_ptr<PretendJob> >;
-    template class WrappedForwardIterator<JobListConstIteratorTag<ExecuteJob>, const std::shared_ptr<ExecuteJob> >;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<JobListConstIteratorTag<PretendJob>, const std::shared_ptr<PretendJob> >;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<JobListConstIteratorTag<ExecuteJob>, const std::shared_ptr<ExecuteJob> >;
 
     namespace resolver {
         template class JobList<PretendJob>;

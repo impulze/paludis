@@ -605,10 +605,10 @@ SwitchArg::can_be_negated() const
 
 namespace paludis
 {
-    template class WrappedForwardIterator<StringSetArg::ConstIteratorTag, const std::string>;
-    template class WrappedForwardIterator<StringSetArg::AllowedArgConstIteratorTag,
+    template class PALUDIS_VISIBLE WrappedForwardIterator<StringSetArg::ConstIteratorTag, const std::string>;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<StringSetArg::AllowedArgConstIteratorTag,
              const std::pair<std::string, std::string> >;
-    template class WrappedForwardIterator<EnumArg::AllowedArgConstIteratorTag,
+    template class PALUDIS_VISIBLE WrappedForwardIterator<EnumArg::AllowedArgConstIteratorTag,
              const AllowedEnumArg>;
-    template class WrappedForwardIterator<StringSequenceArg::ConstIteratorTag, const std::string>;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<StringSequenceArg::ConstIteratorTag, const std::string>;
 }

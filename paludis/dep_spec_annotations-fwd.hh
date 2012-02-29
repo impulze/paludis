@@ -26,8 +26,8 @@
 
 namespace paludis
 {
-    class DepSpecAnnotation;
-    class DepSpecAnnotations;
+    class PALUDIS_VISIBLE DepSpecAnnotation;
+    class PALUDIS_VISIBLE DepSpecAnnotations;
 
 #include <paludis/dep_spec_annotations-se.hh>
 

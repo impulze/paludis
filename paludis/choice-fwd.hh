@@ -40,9 +40,9 @@ namespace paludis
 
     class ChoiceParams;
 
-    struct ChoicePrefixNameTag;
-    struct ChoiceNameWithPrefixTag;
-    struct UnprefixedChoiceNameTag;
+    struct PALUDIS_VISIBLE ChoicePrefixNameTag;
+    struct PALUDIS_VISIBLE ChoiceNameWithPrefixTag;
+    struct PALUDIS_VISIBLE UnprefixedChoiceNameTag;
 
     template <> struct WrappedValueTraits<ChoicePrefixNameTag>;
     template <> struct WrappedValueTraits<ChoiceNameWithPrefixTag>;

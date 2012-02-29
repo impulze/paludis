@@ -408,5 +408,5 @@ BrokenLinkageConfiguration::lib_is_masked(const std::string & lib) const
 
 namespace paludis
 {
-    template class WrappedForwardIterator<BrokenLinkageConfiguration::DirsIteratorTag, const FSPath>;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<BrokenLinkageConfiguration::DirsIteratorTag, const FSPath>;
 }

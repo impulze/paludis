@@ -55,6 +55,6 @@ paludis::operator<< (std::ostream & o, const VersionRequirementsMode & s)
 namespace paludis
 {
     template class Sequence<VersionRequirement>;
-    template class WrappedForwardIterator<Sequence<VersionRequirement>::ConstIteratorTag, const VersionRequirement>;
-    template class WrappedOutputIterator<Sequence<VersionRequirement>::InserterTag, VersionRequirement>;
+    template class PALUDIS_VISIBLE WrappedForwardIterator<Sequence<VersionRequirement>::ConstIteratorTag, const VersionRequirement>;
+    template class PALUDIS_VISIBLE WrappedOutputIterator<Sequence<VersionRequirement>::InserterTag, VersionRequirement>;
 }

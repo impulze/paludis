@@ -26,7 +26,7 @@
 
 namespace paludis
 {
-    struct Maintainer;
+    struct PALUDIS_VISIBLE Maintainer;
 
     typedef Sequence<Maintainer> Maintainers;
 
